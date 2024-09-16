@@ -1,0 +1,583 @@
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links {
+  display: flex;
+  background-color: #d2ece3; /* Slightly darker gray background for the research section */
+  margin: -15px -2px; /* Add margin to the sections */
+  
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+/* SECTIONS */
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  gap: 5rem;
+  height: 80vh;
+  position: relative;
+  margin-bottom: 150px;
+  justify-content: center;
+  max-height: 450px; /* Limit the height of the sections */
+  background-color: #f6dbd0; /* Slightly darker gray background for the research section */
+  padding: 10px; /* Add padding to the sections */
+  margin: 10px 0px; /* Add margin to the sections */
+  width: 100%; /* Force full width */
+
+}
+
+
+.fixed-length-text {
+  text-align: justify; /* Justify the text */
+}
+
+.section__pic-container {
+  display: flex;
+  height: 10px;
+  width: 10px;
+  margin-bottom: -2000px; /* Adjust the value as needed */
+  margin: auto 0;
+}
+
+.section__pic-container img {
+  margin-bottom: 10px; /* Adjust the value as needed */
+}
+
+.section__text {
+
+  margin-top: 100px; /* Adjust the value as needed */
+  align-self: center;
+  text-align: justify;
+  max-width: 600px
+}
+
+.section__text p {
+  font-weight: 700;
+}
+
+.section__text__p1 {
+  text-align: center;
+  margin-bottom: -100px;
+}
+
+.section__text__p2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.fixed-length-text {
+  text-align: justify; /* Justify the text */
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 100px;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* ICONS */
+
+.keke {
+  cursor: pointer;
+}
+
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  padding-top: 20px;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+  
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: relative;
+  left: 90rem;
+  bottom: 12.5rem;
+}
+
+.details-container {
+  padding: 0.35rem;
+  flex: 0.15;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  margin-left: auto;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  
+  position: relative;
+  margin-bottom: -250px; /* Adjust the margin bottom as needed */
+   
+  
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+  height: 40px; /* Adjust this value as needed */
+  overflow: hidden; /* This will hide any content that exceeds the specified height */
+  text-overflow: ellipsis;
+}
+
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+/* CONTACT */
+
+#contact {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+  
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+  background-color: #e0eae9; /* Slightly darker gray background for the research section */
+
+}
+
+.contact-info-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+  
+}
+
+.contact-info-container p {
+  position: relative;
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
+
+
+/* Add these styles to your existing CSS */
+.course-tag {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #95a5a6; /* Gray color */
+  color: #fff; /* White text */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.course-tag.computer-vision {
+  background-color: #FF6B6B; /* Red background for Computer Vision */
+  color: #FFFFFF; /* White text color for Computer Vision */
+}
+
+.course-tag.machine-learning {
+  background-color: #6A0572; /* Purple background for Machine Learning */
+  color: #FFFFFF; /* White text color for Machine Learning */
+}
+
+.course-tag.linear-algebra {
+  background-color: #FFC947; /* Yellow background for Linear Algebra */
+  color: #442B48; /* Dark purple text color for Linear Algebra */
+}
+
+.course-tag.image-processing {
+  background-color: #40E0D0; /* Turquoise background for Image Processing */
+  color: #FFFFFF; /* White text color */
+}
+
+
+
+.github-link {
+  display: inline-block;
+  width: 30px; /* Adjust the width and height as needed */
+  height: 30px;
+  margin-top: 15px; /* Adjust the value as needed */
+
+}
+
+.github-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/* Research Section */
+#research {
+  padding: 200px 0; /* Add padding as needed */
+  margin-bottom: 200px;
+  margin-top: -100px;
+  margin-right: 100px;
+}
+
+.research-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Add space between rows */
+
+}
+
+.research-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px; /* Add space between image and description */
+}
+
+.research-duration {
+  display: inline-block;
+  background-color: #dbbaba;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.research-supervisor {
+  display: inline-block;
+  background-color: #bde1bf;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.research-image img {
+  max-width: 200px; /* Set max width for the image */
+  border: 2px solid #f2f2f2; /* Add a solid border around the image */
+  border-radius: 15px; /* Add rounded corners to the image */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  background-color: #f2f2f22b; /* Set the background color to gray */
+}

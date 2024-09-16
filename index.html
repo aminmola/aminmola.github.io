@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Amin Molaei</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#profile">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#projects">Course Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Amin Molaei</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile_pic2.png" alt="Amin Molaei profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="fixed-length-text">
+          <p class="section__text__p2">
+            I am Mohammad Amin Molaei, a graduate student in electrical engineering at Khaje Nasir Toosi University of Technology (KNTU), specializing in telecommunication systems. My research focuses on federated learning, optimization, and wireless networks, with an emphasis on developing efficient node selection algorithms. I have expertise in machine learning and data science, driven by a passion for leveraging AI to address complex real-world challenges and advance technological innovation.
+          </p>
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <a href="https://www.linkedin.com/in/aminmola/" target="_blank">
+            <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
+          </a>
+          <a href="https://github.com/aminmola/" target="_blank">
+            <img src="./assets/github.png" alt="My Github profile" class="icon" />
+          </a>
+        </div>
+      </div>
+    </section>
+    
+
+    <h1 class="title">Research Experiences</h1>
+
+    <section id="research">
+      <div class="research-container">
+        <div class="research-row">
+          <div class="research-image">
+            <img src="assets/KNTU.png" alt="Lab 1 Image"
+            class="keke"
+            onclick="location.href='https://github.com/rohban-lab'"
+            >
+          </div>
+          
+          <div class="research-description">
+            <div class="research-duration">
+              <p>Feb 2022 - Present</p>
+            </div>
+
+            <div class="research-supervisor">
+              <p>Prof. B. Akhbari</p>
+            </div>
+            <h2>Node Selection for Federated Learning over wireless Networks</h2>
+            <p>In a federated learning setup, the learning process can be significantly
+              impacted by wireless factors such as packet errors and varying availability of network resources
+              (network heterogeneity). To optimize resource allocation, effective node selection and scheduling
+              strategies are essential, alongside solutions that address data distribution heterogeneity. For my
+              master’s thesis, I am developing an advanced scheme to tackle these challenges and enhance the
+              overall performance of federated learning in realistic wireless network. </b> </p>
+          </div>
+        </div>
+        <div class="research-row">
+          <div class="research-image">
+            <img src="assets/sharif_logo.jpg" alt="Lab 2 Image">
+          </div>
+          <div class="research-description">
+            <div class="research-duration">
+              <p>Duration: Summer 2022</p>
+            </div>
+
+            <div class="research-supervisor">
+              <p>Prof. S. Amini</p>
+            </div>
+
+            <h2>Real-Time Pricing for Smart Grid with Distributed Energy</h2>
+            <p>With the increasing integration of distributed energy (DE) and storage
+              devices in the power market, energy provision has become more complex. My research focused
+              on formulating a real-time pricing (RTP) model for the smart grid, which balances real-time
+              demand and shifts peak-hour load. By modeling RTP as a noncooperative game, I developed an
+              online distributed algorithm to optimize energy consumption, generation, and storage strategies,
+              ensuring privacy for both users and providers. The approach demonstrated effective peak load
+              reduction and supply-demand balancing in numerical simulations. </p>
+          </div>
+        </div>
+        <!-- Add more research rows as needed -->
+      </div>
+    </section>
+    
+    
+      
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <section id="projects">
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/LLMs.png"
+                alt="Project 1"
+                class="project-img"
+                style="width: 320px; height: 230px;"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">LLMs-Human Classifier</h2>
+            <span class="course-tag image-processing">Deep Learning</span>
+            <div class="btn-container">
+              <a href="https://github.com/aminmola/LLMs-Human-Text-Classification-using-GAN-Bert" target="_blank" class="github-link">
+                <img src="assets/github.png" alt="GitHub Logo">
+              </a>
+
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Face Morphing.gif"
+                alt="Project 2"
+                class="project-img"
+                style="width: 320px; height: 230px;"
+              />  
+
+            </div>
+            <h2 class="experience-sub-title project-title">Face Metamorphose</h2>
+            <span class="course-tag image-processing">Deep Learning</span>
+            <div class="btn-container">
+              <a href="https://github.com/aminmola/Face_metamorphose" target="_blank" class="github-link">
+                <img src="assets/github.png" alt="GitHub Logo">
+              </a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Rotated_Image.png"
+                alt="Project 3"
+                class="project-img"
+                style="width: 320px; height: 230px;"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Image Spatial Changes</h2>
+            <span class="course-tag image-processing">Deep Learning</span>
+            <div class="btn-container">
+              <a href="https://github.com/aminmola/Image_Spatial_Changes" target="_blank" class="github-link">
+                <img src="assets/github.png" alt="GitHub Logo">
+              </a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="projects">
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/dictionary learning.JPG"
+                alt="Project 1"
+                class="project-img"
+                style="width: 320px; height: 230px;"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Dictionary learning</h2>
+            <span class="course-tag image-processing">Linear Algebra</span>
+            <div class="btn-container">
+              <a href="https://github.com/aminmola/Dictionary_learning" target="_blank" class="github-link">
+                <img src="assets/github.png" alt="GitHub Logo">
+              </a>
+
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ftp.jpeg"
+                alt="Project 2"
+                class="project-img"
+                style="width: 320px; height: 230px;"
+              />  
+
+            </div>
+            <h2 class="experience-sub-title project-title"> File Transfer Protocol </h2>
+            <span class="course-tag image-processing">Data Networks</span>
+            <div class="btn-container">
+              <a href="https://github.com/aminmola/Data_Network_FTP" target="_blank" class="github-link">
+                <img src="assets/github.png" alt="GitHub Logo">
+              </a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/guassian.JPG"
+                alt="Project 3"
+                class="project-img"
+                style="width: 320px; height: 230px;"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">GMM Reconstruction</h2>
+            <span class="course-tag image-processing">Machine Learning</span>
+            <div class="btn-container">
+              <a href="https://github.com/aminmola/Reconstruction_Noisy_Image" target="_blank" class="github-link">
+                <img src="assets/github.png" alt="GitHub Logo">
+              </a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    </section>
+   
+    <section id="projects">
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/image-search.png"
+                alt="Project 1"
+                class="project-img"
+                style="width: 320px; height: 230px;"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Image Search</h2>
+            <span class="course-tag image-processing">Image Processing</span>
+            <div class="btn-container">
+              <a href="https://github.com/aminmola/Image-Search-FastAPI" target="_blank" class="github-link">
+                <img src="assets/github.png" alt="GitHub Logo">
+              </a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/CVAE.png"
+                alt="Project 2"
+                class="project-img"
+                style="width: 320px; height: 230px;"
+              />  
+
+            </div>
+            <h2 class="experience-sub-title project-title">VAE vs CVAE</h2>
+            <span class="course-tag image-processing">Generative Models</span>
+            <div class="btn-container">
+              <a href="https://github.com/aminmola/VAE_VS_CVAE" target="_blank" class="github-link">
+                <img src="assets/github.png" alt="GitHub Logo">
+              </a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ferdowsi.png"
+                alt="Project 3"
+                class="project-img"
+                style="width: 320px; height: 230px;"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Regenerate Persian Poetry</h2>
+            <span class="course-tag image-processing">Generative Models</span>
+            <div class="btn-container">
+              <a href="https://github.com/aminmola/Regenerating_Ferdowsi_Poetry" target="_blank" class="github-link">
+                <img src="assets/github.png" alt="GitHub Logo">
+              </a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    
+    <section id="projects">
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/second.gif"
+                alt="Project 1"
+                class="project-img"
+                style="width: 320px; height: 230px;"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title"> VQAE</h2>
+            <span class="course-tag image-processing">Generative Models</span>
+            <div class="btn-container">
+              <a href="https://github.com/saeidrazavi/Texture-Synthesis" target="_blank" class="github-link">
+                <img src="assets/github.png" alt="GitHub Logo">
+              </a>
+
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/etl.png"
+                alt="Project 2"
+                class="project-img"
+                style="width: 320px; height: 230px;"
+              />  
+
+            </div>
+            <h2 class="experience-sub-title project-title">ETL</h2>
+            <span class="course-tag image-processing">Data Engineering</span>
+            <div class="btn-container">
+              <a href="https://github.com/aminmola/ETL-sample" target="_blank" class="github-link">
+                <img src="assets/github.png" alt="GitHub Logo">
+              </a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/wiki.png"
+                alt="Project 3"
+                class="project-img"
+                style="width: 320px; height: 230px;"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Wikipedia Farsi</h2>
+            <span class="course-tag image-processing">BIG Data</span>
+            <div class="btn-container">
+              <a href="https://github.com/aminmola/Wikipedia_Farsi_Classification" target="_blank" class="github-link">
+                <img src="assets/github.png" alt="GitHub Logo">
+              </a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    </section>
+
+
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:aaminmola@gmail.com">Gmail</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/aminmola/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    
+    
+    <img
+    src="./assets/up-arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#desktop-nav'"
+/>
